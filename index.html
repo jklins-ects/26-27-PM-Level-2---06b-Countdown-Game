@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stop the AI apocalypse</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <h1 id="successMsg">You Did It!</h1>
+        <div class="container">
+            <div id="timer-wrap">
+                <div id="timer">
+                    <span id="hours"></span>:<span id="minutes"></span>:<span
+                        id="seconds"
+                    ></span>
+                </div>
+            </div>
+            <div id="form-wrap">
+                <form action="" id="controls" onsubmit="return false;">
+                    <label for="code" id="instructions"></label>
+                    <input type="text" id="code" class="masked-field" />
+                    <button id="check">Stop!</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
