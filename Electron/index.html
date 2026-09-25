@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Stop the AI apocalypse</title>
         <link rel="stylesheet" href="style.css" />
@@ -19,10 +23,15 @@
                 </div>
             </div>
             <div id="form-wrap">
-                <form action="" id="controls" onsubmit="return false;">
+                <form id="controls">
                     <label for="code" id="instructions"></label>
-                    <input type="text" id="code" class="masked-field" />
-                    <button id="check">Stop!</button>
+                    <input
+                        type="text"
+                        id="code"
+                        class="masked-field"
+                        autocomplete="off"
+                    />
+                    <button type="submit" id="check">Stop!</button>
                 </form>
             </div>
         </div>
